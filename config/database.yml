@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: postgres
+  adapter: postgresql
   pool: 5
   timeout: 5000
   port:         5432
@@ -28,3 +28,4 @@ test:
 production:
   <<: *default
   database: simplex_prod
+
